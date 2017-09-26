@@ -1,0 +1,20 @@
+1、编辑配置文件alarm_config.py
+project_name：根据项目实际名称填写
+dingtalkroboturl：在钉钉上申请钉钉自定义机器人，然后填写申请到的机器人url
+
+2、注册域名
+curl 'http://dnsapi1.tbsite.net/cgibin/dnsapi.cgi?action=add&name=alarm.tbsite.net&ip='部署脚本所在机器ip’
+
+3、后台启动
+nohup python2.7 ./alarm.py
+
+4、使用api推送消息
+见《api文档》
+https://lark.alipay.com/astackservice/support/ng9b4c
+
+5、配置alimonitor与钉钉对接
+见《专有云alimonitor与钉钉对接报警方案》
+https://lark.alipay.com/astackservice/support/ighw17
+
+6、服务端口
+1234
